@@ -105,9 +105,10 @@ while i > 1 :
     sendRequest()
     i = i - 1
     print(i)
-    x = random.randint(1, 100)
+    x = random.randint(1, 30)
     x = x*60
-    print("waiting", x, "seconds")
+    current_time = datetime.now()
+    print("Curent time is:", current_time, ", waiting", x, "seconds to send next request")
     time.sleep(x)
     
 
